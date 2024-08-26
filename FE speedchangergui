@@ -1,0 +1,130 @@
+--[=[
+
+▒█░▒█ ░▀░ █ 　 █▀▄▀█ █▀▀█ █▀▀▄ █▀▀ █▀▀▄ 　 █▀▀▄ █░░█ 
+▒█▀▀█ ▀█▀ ▀ 　 █░▀░█ █▄▄█ █░░█ █▀▀ █░░█ 　 █▀▀▄ █▄▄█ 
+▒█░▒█ ▀▀▀ ▄ 　 ▀░░░▀ ▀░░▀ ▀▀▀░ ▀▀▀ ▀▀▀░ 　 ▀▀▀░ ▄▄▄█ 
+
+█▀▀ █▀▀█ █▀▀█ █▀▀ █▀▀ █▀▀▄ █▀▀█ █▀▀█ █▀▀▄ █▀▀ █▀▀ █▀▀█ ░▀░ █▀▀█ ▀▀█▀▀ █▀▀ █░░█ █▀▀█ █░░░█ █▀▀ █▀▀█ █▀▀ █▀▀ █▀▀█ 
+▀▀█ █░░█ █▄▄█ █░░ █▀▀ █░░█ █░░█ █░░█ █▀▀▄ ▀▀█ █░░ █▄▄▀ ▀█▀ █░░█ ░░█░░ ▀▀█ █▀▀█ █░░█ █▄█▄█ █░░ █▄▄█ ▀▀█ █▀▀ █▄▄▀ 
+▀▀▀ █▀▀▀ ▀░░▀ ▀▀▀ ▀▀▀ ▀░░▀ ▀▀▀▀ ▀▀▀▀ ▀▀▀░ ▀▀▀ ▀▀▀ ▀░▀▀ ▀▀▀ █▀▀▀ ░░▀░░ ▀▀▀ ▀░░▀ ▀▀▀▀ ░▀░▀░ ▀▀▀ ▀░░▀ ▀▀▀ ▀▀▀ ▀░▀▀
+]=]
+
+-- Instances: 10 | Scripts: 2 | Modules: 0
+local G2L = {};
+
+-- StarterGui.secured
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[secured]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+-- StarterGui.secured.Frame
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
+G2L["2"]["Size"] = UDim2.new(0, 297, 0, 148);
+G2L["2"]["Position"] = UDim2.new(0.34752, 0, 0.47348, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+-- StarterGui.secured.Frame.jpvalue
+G2L["3"] = Instance.new("TextBox", G2L["2"]);
+G2L["3"]["CursorPosition"] = -1;
+G2L["3"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["PlaceholderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["ZIndex"] = 2;
+G2L["3"]["BorderSizePixel"] = 3;
+G2L["3"]["TextSize"] = 14;
+G2L["3"]["Name"] = [[jpvalue]];
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(2, 222, 255);
+G2L["3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Guru.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3"]["PlaceholderText"] = [[Enter JumpPower Value Here...]];
+G2L["3"]["Size"] = UDim2.new(0, 170, 0, 25);
+G2L["3"]["Position"] = UDim2.new(0.21327, 0, 0.3474, 0);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(37, 37, 37);
+G2L["3"]["Text"] = [[]];
+
+-- StarterGui.secured.Frame.Apply
+G2L["4"] = Instance.new("TextButton", G2L["2"]);
+G2L["4"]["BorderSizePixel"] = 3;
+G2L["4"]["TextSize"] = 14;
+G2L["4"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/Guru.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4"]["ZIndex"] = 2;
+G2L["4"]["Size"] = UDim2.new(0, 170, 0, 26);
+G2L["4"]["Name"] = [[Apply]];
+G2L["4"]["BorderColor3"] = Color3.fromRGB(37, 37, 37);
+G2L["4"]["Text"] = [[Apply]];
+G2L["4"]["Position"] = UDim2.new(0.21327, 0, 0.58955, 0);
+
+-- StarterGui.secured.Frame.Apply.UIGradient
+G2L["5"] = Instance.new("UIGradient", G2L["4"]);
+G2L["5"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(6, 231, 255)),ColorSequenceKeypoint.new(0.196, Color3.fromRGB(0, 204, 227)),ColorSequenceKeypoint.new(0.483, Color3.fromRGB(0, 255, 235)),ColorSequenceKeypoint.new(0.751, Color3.fromRGB(0, 72, 73)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 252, 255))};
+
+-- StarterGui.secured.Frame.title
+G2L["6"] = Instance.new("Frame", G2L["2"]);
+G2L["6"]["ZIndex"] = 2;
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["Size"] = UDim2.new(0, 297, 0, 22);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Name"] = [[title]];
+
+-- StarterGui.secured.Frame.title.UIGradient
+G2L["7"] = Instance.new("UIGradient", G2L["6"]);
+G2L["7"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(6, 231, 255)),ColorSequenceKeypoint.new(0.196, Color3.fromRGB(0, 204, 227)),ColorSequenceKeypoint.new(0.483, Color3.fromRGB(0, 255, 235)),ColorSequenceKeypoint.new(0.751, Color3.fromRGB(0, 72, 73)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 252, 255))};
+
+-- StarterGui.secured.Frame.TextLabel
+G2L["8"] = Instance.new("TextLabel", G2L["2"]);
+G2L["8"]["ZIndex"] = 2;
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["TextSize"] = 14;
+G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Guru.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["BackgroundTransparency"] = 1;
+G2L["8"]["Size"] = UDim2.new(0, 200, 0, 22);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Text"] = [[JumpPowerChangerGUI - By SpaceNoobScriptShowcaser]];
+G2L["8"]["Position"] = UDim2.new(0.16162, 0, 0, 0);
+
+-- StarterGui.secured.LocalScript
+G2L["9"] = Instance.new("LocalScript", G2L["1"]);
+
+
+-- StarterGui.secured.LocalScript
+G2L["a"] = Instance.new("LocalScript", G2L["1"]);
+
+
+-- StarterGui.secured.LocalScript
+local function C_9()
+local script = G2L["9"];
+	local gui = script.Parent
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+	local jpValueTextBox = gui.Frame.jpvalue
+	local applyButton = gui.Frame.Apply
+	
+	applyButton.MouseButton1Click:Connect(function()
+		local speedValue = tonumber(jpValueTextBox.Text)
+		if speedValue and speedValue > 0 then
+			humanoid.WalkSpeed = speedValue
+			print("Walk Speed set to: " .. speedValue)
+		else
+			print("Please enter a valid positive number.")
+		end
+	end)
+	
+end;
+task.spawn(C_9);
+-- StarterGui.secured.LocalScript
+local function C_a()
+local script = G2L["a"];
+	frame = script.Parent.Frame
+	frame.Draggable = true
+	frame.Selectable = true
+	frame.Active = true
+end;
+task.spawn(C_a);
+
+return G2L["1"], require;
